@@ -1,0 +1,128 @@
+{#<title>『消谣』分享</title>#}
+{#<img src={{ object.img.url }}/>#}
+{#<h2> {{ object.title }} </h2>#}
+{#<p> {{ object.contentText |safe}} </p>#}
+{#<p> {{ object.analysisText| linebreaks}} </p>#}
+{#<p>发表于: {{ object.createdTime|date }}</p>#}
+{##}
+{##}
+{#<p>日期: {{ object.commentCount }}</p>#}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ object.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <meta name="keywords" content="辟谣，谣言，流言，真相">
+    <meta name="description"
+          content="消谣致力于打破生活中广为流传的谣言，传递真相。中国古代有“三人成虎”的典故，我们深知众口铄金的力量，所以精心收集各种影响人们生活的流言，加以解析。流言止于智者，让我们做真理的追寻者！">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <link rel="stylesheet" href="/media/css/main.css">
+    <link rel="stylesheet" href="/media/css/reset.css">
+</head>
+
+<body style="width: auto">
+<header class="article_head">
+    <div class="article_logo" align="center"><a href={{ appurl }}><img src={{ logo }} height="50"></a></div>
+</header>
+<div class="article_content">
+
+    <article class="article_detail">
+        <img src={{ object.img.url }}>
+        <h1>{{ object.title }}</h1>
+        <div class="author">
+            {#                <img src={{ object.img.url }} >#}
+            <img src={{ avatar }}>
+            <span>{{ object.createdTime }}</span>
+        </div>
+        <p></p>
+        {% if object.tf %}
+            <h4 style="color:green">{{ object.contentText }}</h4>
+        {% else %}
+            <h4 style="color:red">{{ object.contentText }}</h4>
+        {% endif %}
+        {#            <h2>经典是一张精致的面皮</h2><h5>朱大可<br></h5>#}
+        <p>{{ object.analysisText|linebreaks }}</p>
+        {#            <p>什么是经典？什么是经典所具有的真正品质？什么是衡量经典的基本尺度？撇开那些关于古典价值的陈词滥调，我的回答只有一个，<strong>那就是时间</strong>。经典就是那种能够扛住时间磨损的钻石文本，它越过纷乱的岁月，保持着自己的微光，像星辰一样，恒久地照耀我们的瞳仁。它以自身的存在告诉我们，有一种东西叫做永恒。与此同时，经典并不拒绝空间，但它拒绝入住那些最肮脏无耻的灵魂。它犹如金字塔的那个尖顶，体量微小，却标定了整个金字塔的高度。这是一种隐喻式的表述。就其本质而言，<strong>经典无意占有广阔的空间，却掌控了空间中最核心的部位</strong>。</p><p>经典向世人提供了灵魂营造的要素。澳大利亚悉尼西区的各个火车站点，曾经被中学生流氓所占据，吸毒、性交和斗殴事件频繁发生。警方和铁路管理当局都束手无措。最后由一位文化策划师提案解决了问题。这个方案的核心是，它要求所有那些犯罪率高发的车站，每天24小时播放莫扎特音乐。铁路当局为此购置并安装了相关设备，但所有人都对此举的效果深表怀疑。一个月后，奇迹悄然发生了——那些问题学生的行为，因倾听莫扎特而变得“合法”起来，以致火车站犯罪率急剧下降。<strong>这是音乐经典改造人性的一个典型案例。它向我们证明了经典和灵魂的密切关联。</strong></p><p>经典的这种非凡属性，就是它的价值证书，也是它获得敬意的理由。在我的个人阅读史上，经典占据了三分之二的容量，如果可能，剩下的三分之一，也应该完全交给经典。可惜我无法做到这点。尽管我保持了足够的警惕，还是会被各种宣传品所蛊惑，<strong>它劝诱人们阅读那些包装成经典的垃圾，但只要稍作品尝，就会闻出它的赝品气味</strong>。但我已经为此完成了购买行为。许多人都像我一样，被无耻的广告所诱惑，成为伪经典的俘获者。</p><p>然而，尽管许多流行物企图装扮成经典，但它们最终会被时间的水流冲走，甚至不留下任何痕迹。<strong>就图书、影视剧、歌舞而言，中国消费市场提供的绝大多数流行文本，都是低俗的劣质品，而且没有什么例外。这种唯独劣质品得以盛行的怪象，我称为“垃圾效应”。</strong>在电影圈，这种效应因票房金额而被显著放大。投资人竞相把资金投向垃圾导演，唯一的理由，就是他们能用垃圾创造票房奇迹。用垃圾挣钱，已是中国文化市场的基本游戏规则。没有哪个投资人会为此感到不安。</p><p><strong>大众文化的垃圾效应，根植于艺术趣味的普遍低下。鉴于持续了大半个世纪的粗鄙化运动，以及平民教育缺乏“美育”环节，大众美感无法通过正常方式塑造，以致文化消费者丧失对美的基本感知力。</strong>任何一种低端的噱头，如明星绯闻、关于财富的梦想、毫无节制的暴力，都能戳中公众的“美点”，点燃他们狂热的消费激情。这种消费格局也诱导文化工作者，鞭策他们从事垃圾生产，以谋取高额利润。<br></p><p>这场景是对经典文本的最大讽刺。<strong>经典强大而脆弱。在过去，它被文革和专制的烈火所焚毁，而在消费时代，它又被大面积的泡沫式垃圾所吞没。垃圾无耻地屹立在经典面前，凭藉所谓的市场份额，高声嘲笑它的敌人。这是经典所面对的最大困境。</strong></p><p>经典的另一困境在于，对于大多数人来说，它只是一张精致而矫饰的面皮而已。它的唯一功能，就是被用来张贴在不自信的脸上，令其散发出文化、文艺和文雅的气息。文化制造商洞察了人性的这种弱点。他们制作数千元一套、豪华包装的“经典丛书”，以礼品书的形态进驻私人书房，陈列于黄花梨、红酸枝或鸡翅木的书橱，并因射灯的照射，闪烁着华贵雍容的光辉，并说出对主人的无限赞美。<strong>但书的主人却从未翻阅过这些经典。它们被悬置在书架上，完全丧失了被阅读的契机。它们是世界上最沉重的装饰品。</strong></p><p>经典何时才能成为人的精神支撑，这才是我所关切的问题。整容术的程序通常是，从自体胸部截下软肋骨，把它植入颅骨正前方，以提升鼻子的高度和优化它的线条。<strong>但经典与人的关联，却要依赖一个完全相反的程序，那就是让表皮不再硬化为面具，而是像面膜一样被皮肤吸收，内化为肌肉和四肢骨骼的一部分，最终融入心脏、脊梁与大脑，成为灵魂的主宰。没有经过这样的自我塑造，经典就只能是附在脸上的饰品。</strong></p><h5>本文转自朱大可公众号文化先锋（iwenhuaxianfeng），经授权使用。</h5><footer><hr><p>朱大可，当代负有盛名的文化批评家，学者，小说及随笔作家。祖籍福建武平客家。1957年生于上海。华东师范大学中文系毕业。澳大利亚悉尼理工大学哲学博士，悉尼大学亚洲研究学院访问学者。现为同济大学文化批评研究所教授。目前主要从事中国文化研究与批评。主要著述有专著 《流氓的盛宴》，文集《燃烧的迷津》、 《话语的闪电》、《记忆的红皮书》、《孤独的大多数》、《朱大可守望系列》（5卷 ）等；主编教材《文化批评》、年鉴《21世纪中国文化地图》（1-8卷）等。以新锐的思想和独特的话语方式见长，其见解在中国思想文化界富有影响。</p><p><span style="color: rgba(0, 0, 0, 0.498039); font-size: 12px; text-align: justify;">责任编辑：颖川（yingchuan@enclavelit.com）</span></p></footer><p></p>#}
+    </article>
+    {#                <div class="readOther">#}
+    {#            <span><a href="http://app.enclavebooks.cn">回到首页</a></span>#}
+    {#            <span>                        <a href="http://app.enclavebooks.cn/share/article/252"><span>再看一篇</span></a>#}
+    {#                    </span>#}
+    {#        </div>#}
+    <div class="clearfix"></div>
+    <figure class="downBtnPic">
+        <img src={{ appQrcode }} alt="">
+        <figcaption>扫描二维码下载App</figcaption>
+    </figure>
+</div>
+<footer class="foot">
+    <div class="footTop">
+        <div class="introduce">
+            <img src={{ logo }}  alt="" height="30" align="center">
+            <p>消谣致力于打破生活中广为流传的谣言，传递真相。中国古代有“三人成虎”的典故，我们深知众口铄金的力量，所以精心收集各种影响人们生活的流言，加以解析。流言止于智者，让我们做真理的追寻者！</p>
+            <div class="contact">
+                <span class="tel"> 15510037938</span>
+                <span class="email">iecaser@163.com</span>
+                <span class="address">中国科学院电子学研究所科电大厦</span>
+            </div>
+        </div>
+                    <div class="brand sorts">
+                        <h3>品牌</h3>
+                        <ul>
+                           <li><a href="http://weidian.com/?userid=317474198" target="_blank">飞地书局</a></li>
+                            <li><a href="http://www.lizhi.fm/1423296/" target="_blank">声音馆</a></li>
+                            <li><a href="http://weidian.com/?userid=317474198" target="_blank">丛刊</a></li>
+                        </ul>
+                    </div>
+                    <div class="application sorts">
+                        <h3>App</h3>
+                        <ul>
+                              <li><a href="https://www.enclavemedia.cn/l">活动</a></li>
+                            <li><a href="https://www.lagou.com/gongsi/133764.html">招聘</a></li>
+                            <li><a href="https://www.enclavemedia.cn/">商务合作</a></li>
+                        </ul>
+    </div>
+            </div>
+</footer>
+
+
+{#</body><style id="stylish-4" class="stylish" type="text/css">html,body {background:#E4E4E4 !important;}</style><style id="stylish-5" class="stylish" type="text/css">/*================================*#}
+{# * Name  : Douban - 圆角灰底#}
+{# * Author : cirer#}
+{# * Updated: 2011.10.27(临时修正)#}
+{# * Description : 自用的豆瓣圆角风格#}
+{# *================================*/#}
+{##}
+{#/*------------------------------------#}
+{#   ||||||||||||||| Color codes |||||||||||||||#}
+{#  ------------------------------------#}
+{#        Background#}
+{#        Body:          #76827B#}
+{#        H1~H4:       #D5E2DE#}
+{#        #wrapper:    #F0F7F9#}
+{#-------------------------------------*/#}
+{##}
+{#@namespace url(http://www.w3.org/1999/xhtml);#}
+{##}
+{#/*========= douban.com =========*/</style><style id="stylish-13" class="stylish" type="text/css">/**#}
+{# * Google Search Tools Back (User Styles)#}
+{# *#}
+{# * Brings back Google search tools to left side and displays drop-down menu items.#}
+{# *#}
+{# * @version  20150627#}
+{# * @author   Ming-Hsien Lin (akiratw)#}
+{# * @license  MIT License#}
+{# * @homepage https://userstyles.org/styles/95110/google-search-tools-back#}
+{# */#}
+{##}
+{#@namespace url(http://www.w3.org/1999/xhtml);</style><style id="stylish-15" class="stylish" type="text/css">/* AGENT_SHEET */#}
+{##}
+{#/** GT DeepDark for Google#}
+{#/*  http://userstyles.org/styles/81403/#}
+{#/*  by sr21#}
+{#/*  currently updated by shepherdator#}
+{#/*  http://userstyles.org/styles/102870/#}
+{#/*    17/09/2015#}
+{#/*    License: CC-BY-SA#}
+{#*/#}
+{#@namespace url(http://www.w3.org/1999/xhtml);</style></html>#}

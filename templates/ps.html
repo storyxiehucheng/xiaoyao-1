@@ -1,0 +1,11 @@
+<form  method='POST' style="text-align: center">
+ {% for field in form %}
+  <div class = 'fieldWrapper'>
+   {{field.label_tag}}{{ '\t'}} {{field}}
+   {{field.errors}}
+  {{ form.non_field_errors }}
+  </div>
+ {% endfor %}
+<p style="color:red">密码须由数字和英文字符组成，长度至少6位，</p>
+ <div class='fieldWrapper'> <p><input type='submit' value='提交'></p></div>
+</form>
